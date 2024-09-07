@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>modulo 2 proyecto de Bootstrap</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
                 <h6 class="pt-1">Instagram</h6>
             </div>    
                 <div class="dropdown">
-                <button type="button" id="open-button" class="btn btn-success" data-toggle="modal" data-target="#miModal">Create a new post</button>
+                <button type="button" id="open-button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#miModal">Create a new post</button>
                 <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -30,12 +31,12 @@
                                     <textarea placeholder="Add the caption of your post here" class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
                                 </div>
                                 <div class="justify-content-start">
-                                    <button type="button" class="btn btn-secondary m-2"><ion-icon name="camera"></ion-icon></button>
-                                    <button type="button" class="btn btn-secondary"><ion-icon name="navigate-outline"></ion-icon></button>
+                                    <button type="button" class="btn btn-light m-1 border"><ion-icon name="camera"></ion-icon></button>
+                                    <button type="button" class="btn btn-light border"><ion-icon name="navigate-outline"></ion-icon></button>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-success">Publish</button>
                             </div>
                         </div>
@@ -60,56 +61,55 @@
         <div class="row">
             <nav>
                 <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                    <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><ion-icon name="square-outline"></ion-icon></a>
-                    <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#post" role="tab" aria-controls="post" aria-selected="false"><ion-icon name="grid-outline"></ion-icon></a>
+                    <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+                    <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#post" role="tab" aria-controls="post" aria-selected="false"><i class="fa-solid fa-square"></i></a>
                 </div>
             </nav>
         </div> 
 
         <!--1-->
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <div class="container">
+        <div class="tab-pane fade" id="post" role="tabpanel" aria-labelledby="nav-profile-tab">   
+        <div class="container">
         <div class="d-flex flex-column align-items-center">
         <div class="row" style="margin-bottom: 20px; margin-top: 40px;">
-            <div class="card" style="width: 25rem;">
-            <div class="d-flex justify-content-between align-items-end" style="padding-top: 8px; padding-bottom: 8px;">
+            <div class="card" style="width: 23rem;">
+            <div class="d-flex justify-content-between align-items-end" style="padding-top: 8px; padding-bottom: 10px;">
                 <p style="padding-left: 6px; font-size: 18px; margin-bottom: 0;"><strong>This is a nice place...</strong></p>
                 <p style="padding-right: 6px; font-size: 14px; margin-bottom: 0;">15/08</p>
             </div>    
                 <img class="card-img-top" style="margin-bottom: 5px; height: 330px;" src="https://fastly.picsum.photos/id/59/2464/1632.jpg?hmac=uTfe6jCzLvCzANvJgtpo-a0fKhO8BvjpwLNYX3lqx_Q" alt="Card image cap">
                 <p style="font-size: 13px; font-family: sans-serif; margin-bottom: 0; margin-left: 6px;"><strong>8,000 </strong><ion-icon name="heart-circle-outline"></ion-icon></p>
-                <div class="card-body" style="height: 150px; padding-top: 30px;">
-                <p class="card-text" style="font-family: sans-serif; font-size: 14px; text-align: justify;">A moment caught, forever still,
-                In frames of light, the world stands still, through lenses wide, we see anew, the fleeting life in every view.</p>
+                <div class="card-body" style="height: 150px; padding-top: 10px;">
+                <p class="card-text" style="font-family: sans-serif; font-size: 14px; text-align: justify;">Switzerland is a haven for nature lovers and photographers alike, boasting some of the most breathtaking views in the world. From the majestic Alps to the serene lakes, the picturesque villages to the lush green valleys, every corner of this country is a visual treat.</p>
                 </div>
             </div>
         </div>
 
         <div class="row" style="margin-bottom: 20px; margin-top: 40px;">
-            <div class="card" style="width: 25rem;">
-            <div class="d-flex justify-content-between align-items-end" style="padding-top: 8px; padding-bottom: 8px;">
+            <div class="card" style="width: 23rem;">
+            <div class="d-flex justify-content-between align-items-end" style="padding-top: 8px; padding-bottom: 10px;">
                 <p style="padding-left: 6px; font-size: 18px; margin-bottom: 0;"><strong>A blue sky...</strong></p>
                 <p style="padding-right: 6px; font-size: 14px; margin-bottom: 0;">16/08</p>
             </div>    
                 <img class="card-img-top" style="margin-bottom: 5px; height: 330px;" src="https://fastly.picsum.photos/id/38/1280/960.jpg?hmac=HBrgyJHQOGVicaWoXgvdSfTakkAyv4BxAt4rF0DhWkU" alt="Card image cap">
                 <p style="font-size: 13px; font-family: sans-serif; margin-bottom: 0; margin-left: 6px;"><strong>22,000 likes</strong></p>
-                <div class="card-body" style="height: 150px; padding-top: 30px;">
-                <p class="card-text" style="font-family: sans-serif; font-size: 14px; text-align: justify;">The sky is a canvas of endless wonder, painted in soft hues of blue by day and kissed by golden sunlight. As dusk falls, it blushes with shades of pink and purple, fading into a deep, starry night.</p>
+                <div class="card-body" style="height: 150px; padding-top: 10px;">
+                <p class="card-text" style="font-family: sans-serif; font-size: 14px; text-align: justify;">The sky is a profound paradox, a constant reminder of the infinite and the finite, the eternal and the ephemeral. It is a canvas of ever-changing beauty, a kaleidoscope of colors and textures that evoke emotions and inspire contemplation. And yet, it is also a vast and seemingly boundless expanse.</p>
                 </div>
             </div>
         </div>
 
         <div class="row" style="margin-bottom: 20px; margin-top: 40px;">
-            <div class="card" style="width: 25rem;">
-            <div class="d-flex justify-content-between align-items-end" style="padding-top: 8px; padding-bottom: 8px;">
+            <div class="card" style="width: 23rem;">
+            <div class="d-flex justify-content-between align-items-end" style="padding-top: 8px; padding-bottom: 10px;">
                 <p style="padding-left: 6px; font-size: 18px; margin-bottom: 0;"><strong>Art...</strong></p>
                 <p style="padding-right: 6px; font-size: 14px; margin-bottom: 0;">17/08</p>
             </div>    
                 <img class="card-img-top" style="margin-bottom: 5px;" src="https://fastly.picsum.photos/id/31/3264/4912.jpg?hmac=lfmmWE3h_aXmRwDDZ7pZb6p0Foq6u86k_PpaFMnq0r8" alt="Card image cap">
                 <p style="font-size: 13px; font-family: sans-serif; margin-bottom: 0; margin-left: 6px;"><strong>10,000 likes</strong></p>
-                <div class="card-body" style="height: 130px; padding-top: 30px;">
-                <p class="card-text" style="font-family: sans-serif; font-size: 14px; text-align: justify;">The heart of art is...a brush of light, a stroke of air, in every line, a story's there.Colors blend, and shapes take form, in art, the soul is ever warm.</p>
+                <div class="card-body" style="height: 130px; padding-top: 10px;">
+                <p class="card-text" style="font-family: sans-serif; font-size: 14px; text-align: justify;">Art is the language of the soul, a universal dialect that transcends borders and boundaries. It is a reflection of our collective humanity, a manifestation of our deepest emotions, desires, and fears. Through the strokes of a brush, the chiseling of marble...</p>
                 </div>
             </div>
         </div>
@@ -117,31 +117,31 @@
         </div>
         </div>
 
-
+        
 
         <!--2-->
-        <div class="tab-pane fade" id="post" role="tabpanel" aria-labelledby="nav-profile-tab"> 
-        <div class="container">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="container" style="padding-left: 45px;">
             <div class="row">
-                <div class="col py-3"><img src="https://picsum.photos/id/71/350/350"></div>
-                <div class="col py-3"><img src="https://picsum.photos/id/78/350/350"></div>
-                <div class="col py-3"><img src="https://picsum.photos/id/100/350/350"></div>
+                <div class="col py-1 px-2"><img src="https://picsum.photos/id/71/350/350"></div>
+                <div class="col py-1 px-2"><img src="https://picsum.photos/id/78/350/350"></div>
+                <div class="col py-1 px-2"><img src="https://picsum.photos/id/100/350/350"></div>
             </div>
             </div>
 
-            <div class="container">
+            <div class="container" style="padding-left: 45px;">
             <div class="row">
-                <div class="col py-3"><img src="https://picsum.photos/id/98/350/350"></div>
-                <div class="col py-3"><img src="https://picsum.photos/id/95/350/350"></div>
-                <div class="col py-3"><img src="https://picsum.photos/id/45/350/350"></div>
+                <div class="col py-1 px-2"><img src="https://picsum.photos/id/98/350/350"></div>
+                <div class="col py-1 px-2"><img src="https://picsum.photos/id/95/350/350"></div>
+                <div class="col py-1 px-2"><img src="https://picsum.photos/id/45/350/350"></div>
             </div>
             </div>           
 
-            <div class="container">
+            <div class="container" style="padding-left: 45px;">
             <div class="row">            
-                <div class="col py-3"><img src="https://picsum.photos/id/85/350/350"></div>
-                <div class="col py-3"><img src="https://picsum.photos/id/14/350/350"></div>
-                <div class="col py-3"><img src="https://picsum.photos/id/10/350/350"></div>
+                <div class="col py-1 px-2"><img src="https://picsum.photos/id/85/350/350"></div>
+                <div class="col py-1 px-2"><img src="https://picsum.photos/id/14/350/350"></div>
+                <div class="col py-1 px-2"><img src="https://picsum.photos/id/10/350/350"></div>
             </div>
             </div>
         </div>
